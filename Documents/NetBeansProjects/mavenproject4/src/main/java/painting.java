@@ -8,9 +8,10 @@
  *
  * @author AJ
  */
+import java.util.Scanner;
+
 public class painting {
-    import java.util.Scanner;
-public class PaintJobEstimator {
+    
 	 /* number of rooms
 	price of paint per gallon
 	square feet of wall per each room
@@ -27,7 +28,7 @@ public class PaintJobEstimator {
 	totalLabourHours = perSftTime *totalSft;
 	totalLaborCharges = totalLabourHours*18;
 	totalCost = totalCostOfpaint+totalLaborCharges ; */
-	static double baseSft = 115.0;
+	  static double baseSft = 115.0;
 		public static void main(String[] args) {
 			double roomsToBePainted, priceOfPaintPerGallon,squareFeetOfWallSpaceInEachRoom;
 			Scanner sc = new Scanner(System.in);
@@ -82,4 +83,4 @@ public class PaintJobEstimator {
 		
 		}
 	}
-}
+

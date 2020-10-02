@@ -1,3 +1,6 @@
+
+import java.util.Random;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,64 +12,30 @@
  * @author AJ
  */
 public class oddandeven {
+  
    public static void main(String args[ ])
 {
-   int num;
-  Scanner sc = new Scanner(System.in);
-System.out.println("Enter a num:");
-num = sc.nextInt();
-if(isPrime(num))
-{
-   System.out.println(num+ " is a prime number");
-  }
-else
-{
-System.out.println(num+ " is not a prime number");
-   }
-}
-
-public static boolean isPrime(int num)
-{
-    if( num <= 1)
-     {
-         return false;
-     }
-   for( int i= 2;i<=num/2; i++)
-{ 
-   if (num%i == 0)
-  { 
-     return false;
-  }
-}
-return true;
-}
-}
-import java.util.*
-public class evenOdd
-{
-   public static void main(String args[ ])
-{
-   int randomNumbers = 100;
-   int evenCount =0;
-   int oddCount = 0;
+   int RANDOM = 100;
+   int COUNTOFEVEN =0;
+   int COUNTOFODD = 0;
     
 Random randomNum = new Random();
 
-for( int i = 1; i<= randomNumbers; i++)
+for( int i = 1; i<= RANDOM; i++)
 { 
    if( isEven( randomNum.nextInt(i)))
 { 
-   evenCount = evenCount+1;
+   COUNTOFEVEN = COUNTOFEVEN+1;
 }
 else
 {
- oddCount = oddCount+ 1;
+ COUNTOFODD = COUNTOFODD+ 1;
 }
 }
 
-System.out.println("even numbers count is : "+evenCount);
+System.out.println("THE GIVEN NUMBE IS EVEN : "+COUNTOFEVEN);
 
-System.out.println("odd numbers count is : "+oddCount);
+System.out.println("THE GIVEN NUMBER IS ODD : "+COUNTOFODD);
 }
 
 public static boolean isEven( int n)
@@ -76,4 +45,4 @@ public static boolean isEven( int n)
      return true;
   }
    return false;
-}
+}}
